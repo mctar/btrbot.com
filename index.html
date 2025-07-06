@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>btrbot — butter bots</title>
   <style>
-    /* ————— Reset & base ————— */
+    /* ——— Reset & base ——— */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: #000; color: #fff; }
 
-    /* ————— Hero ————— */
+    /* ——— Hero ——— */
     .hero { position: relative; height: 100vh; overflow: hidden; }
     .hero video {
       position: absolute; top: 50%; left: 50%;
@@ -23,34 +23,50 @@
       letter-spacing: .04em;
     }
 
-    /* ————— Sections ————— */
+    /* ——— Sections ——— */
     .section { padding: 3rem 1rem; text-align: center; }
 
-    /* ————— Links ————— */
+    /* ——— Bot links ——— */
+    .links { max-width: 640px; margin: 0 auto; }
     .links a {
-      display: inline-block; margin: .5rem 0;
-      color: #00d3ff; text-decoration: none; font-weight: 600; transition: opacity .2s;
+      display: block; padding: 1rem 1.25rem; margin: .75rem 0;
+      background: #111; border-radius: 8px;
+      text-decoration: none; transition: background .25s, opacity .2s;
     }
-    .links a:hover { text-decoration: underline; opacity: .85; }
+    .links a:hover { background: #1a1a1a; opacity: .9; }
+    .links strong { color: #00d3ff; font-weight: 700; font-size: 1.1rem; }
+    .links small { display: block; margin-top: .25rem; font-size: .85rem; color: #aaa; font-weight: 400; }
 
-    /* ————— Footer ————— */
+    /* ——— Footer ——— */
     footer { font-size: .8rem; opacity: .6; }
+    footer img { height: 24px; vertical-align: middle; margin-right: .5rem; }
+    footer a { color: #00d3ff; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <header class="hero">
-    <!-- Replace “butterbot.mp4” with the actual file name if different -->
-    <video src="butterbot.mp4" autoplay muted loop playsinline></video>
-    <h1>You have only one job...<br>pass the butter</h1>
+    <!-- Place the video file inside /assets and keep the same name -->
+    <video src="assets/butterbot.mp4" autoplay muted loop playsinline></video>
+    <h1>You have only one job…<br>pass the butter</h1>
   </header>
 
   <main class="section">
     <h2>Available Butter Bots</h2>
     <div class="links">
-      <a href="https://speed.btrbot.com" target="_blank" rel="noopener">speed.btrbot.com →</a>
+      <a href="https://speed.btrbot.com" target="_blank" rel="noopener">
+        <strong>speed.btrbot.com</strong>
+        <small>Bare bone GPS speedometer for use in browser on a phone</small>
+      </a>
     </div>
   </main>
 
-  <footer class="section">© 2025 btrbot.com</footer>
+  <footer class="section">
+    <!-- Add logo file as /assets/gervi-logo.svg or .png -->
+    <img src="assets/gervi-logo.svg" alt="Gervi Labs logo" />
+    <a href="https://gervi.ai" target="_blank" rel="noopener">gervi.ai</a> ·
+    <a href="https://www.linkedin.com/company/gervi-labs/" target="_blank" rel="noopener">LinkedIn</a><br>
+    © 2025 Gervi Labs
+  </footer>
 </body>
 </html>

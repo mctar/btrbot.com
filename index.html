@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>btrbot — butter bots</title>
+  <style>
+    /* ————— Reset & base ————— */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: #000; color: #fff; }
+
+    /* ————— Hero ————— */
+    .hero { position: relative; height: 100vh; overflow: hidden; }
+    .hero video {
+      position: absolute; top: 50%; left: 50%;
+      min-width: 100%; min-height: 100%; width: auto; height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover; filter: brightness(.6);
+    }
+    .hero h1 {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      font-size: clamp(2rem, 5vw, 4rem); line-height: 1.15; text-align: center;
+      letter-spacing: .04em;
+    }
+
+    /* ————— Sections ————— */
+    .section { padding: 3rem 1rem; text-align: center; }
+
+    /* ————— Links ————— */
+    .links a {
+      display: inline-block; margin: .5rem 0;
+      color: #00d3ff; text-decoration: none; font-weight: 600; transition: opacity .2s;
+    }
+    .links a:hover { text-decoration: underline; opacity: .85; }
+
+    /* ————— Footer ————— */
+    footer { font-size: .8rem; opacity: .6; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <!-- Replace “butterbot.mp4” with the actual file name if different -->
+    <video src="butterbot.mp4" autoplay muted loop playsinline></video>
+    <h1>This robot only has one job —<br>pass the butter.</h1>
+  </header>
+
+  <main class="section">
+    <h2>Available Butter Bots</h2>
+    <div class="links">
+      <a href="https://speed.btrbot.com" target="_blank" rel="noopener">speed.btrbot.com →</a>
+    </div>
+  </main>
+
+  <footer class="section">© 2025 btrbot.com</footer>
+</body>
+</html>
